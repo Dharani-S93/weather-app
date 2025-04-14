@@ -30,13 +30,6 @@ Password: password123
 
 ---
 
-## 🖼️ Screenshots
-
-| Login Page | Dashboard | Weather Search | Weather Info Card |
-|------------|-----------|----------------|-------------------|
-| ![Login](./src/assets/screenshots/screenshot-login.png) | ![Dashboard](./src/assets/screenshots/screenshot-dashboard.png) | ![Search](./src/assets/screenshots/screenshot-search.png) | ![Card](./src/assets/screenshots/screenshot-weathercard.png) |
-
----
 
 ## 🛠️ Built With
 
