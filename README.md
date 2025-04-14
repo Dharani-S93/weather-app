@@ -1,70 +1,60 @@
-<h1 align="center">🌤️ Weather Dashboard App</h1>
 
+<h1 align="center">🌤️ Weather Dashboard</h1>
 <p align="center">
-  A beautifully designed weather dashboard built with React, offering real-time weather updates for cities around the world.<br/>
-  🔐 Secure login • ☁️ Live data • 💡 Smooth UX • 🎨 Clean UI
+  <strong>A sleek, modern React application for checking live weather forecasts city-by-city.</strong>
+</p>
+<p align="center">
+  Built with 💙 React, Axios, and OpenWeatherMap API
 </p>
 
-<p align="center">
-  <img src="./assets/screenshots/screenshot-dashboard.png" alt="Weather Dashboard Screenshot" width="80%" />
-</p>
-
 ---
 
-## 📌 Overview
-
-This project is a **2-page weather dashboard web application** built using **ReactJS**. It includes a secure login system (static credentials) and an interactive dashboard where users can search for any city and view its current weather conditions. The UI is responsive, intuitive, and styled for a professional-grade user experience.
-
----
-
-## 🚀 Live Demo
-
-👉 [Visit the Live App](https://your-live-site-link.netlify.app)  
-*(Replace this with your actual deployed URL)*
-
----
-
-## 🔐 Login Credentials
-
-Use these static credentials to access the app:
+## 🔐 Demo Credentials
 
 ```bash
 Username: admin
 Password: password123
+```
 
-✨ Features
-🔒 Login Page with form validation
+---
 
-☀️ Live Weather Search by city
+## ✨ Features
 
-📡 Fetches data from OpenWeatherMap API
+- 🔒 **Secure Login Page** with form validation
+- ☀️ **Live Weather Search** by city name
+- 📡 **Real-Time Data** from OpenWeatherMap API
+- ⚡ **Fast & Lightweight** React app
+- 📱 **Responsive Design** across devices
+- 🎯 **Modular Components** for scalable architecture
+- 💅 **CSS Modules** for clean and scoped styling
 
-📱 Responsive design for all screen sizes
+---
 
-⚡ Fast and lightweight React app
+## 🖼️ Screenshots
 
-🎯 Modular components for scalability
+| Login Page | Dashboard | Weather Search | Weather Info Card |
+|------------|-----------|----------------|-------------------|
+| ![Login](./src/assets/screenshots/screenshot-login.png) | ![Dashboard](./src/assets/screenshots/screenshot-dashboard.png) | ![Search](./src/assets/screenshots/screenshot-search.png) | ![Card](./src/assets/screenshots/screenshot-weathercard.png) |
 
-💅 Clean UI & consistent styling using CSS Modules
+---
 
-🖼️ Screenshots
-Login Page	Dashboard
-Search Weather	Weather Info Card
-🛠️ Built With
-Tech	Description
-React	JavaScript library for building the UI
-CSS Modules	Scoped, maintainable component styling
-Axios	API handling library for HTTP requests
-OpenWeatherMap	Real-time weather data provider
-🗂️ Folder Structure
-pgsql
-Copy
-Edit
+## 🛠️ Built With
+
+| Technology       | Description                                |
+|------------------|--------------------------------------------|
+| **React**        | JavaScript library for building UI         |
+| **CSS Modules**  | Component-scoped styling                   |
+| **Axios**        | Promise-based HTTP client                  |
+| **OpenWeatherMap** | Weather data provider with global reach |
+
+---
+
+## 🗂️ Project Structure
+
+```
 weather-dashboard/
-│
 ├── public/
 │   └── index.html
-│
 ├── src/
 │   ├── components/
 │   │   ├── Login.jsx
@@ -76,57 +66,66 @@ weather-dashboard/
 │   │       ├── screenshot-dashboard.png
 │   │       ├── screenshot-search.png
 │   │       └── screenshot-weathercard.png
+│   ├── styles/
+│   │   └── *.module.css
 │   ├── App.js
-│   ├── index.js
-│   └── styles/
-│       └── *.module.css
-│
+│   └── index.js
 ├── .gitignore
 ├── package.json
 └── README.md
-🧑‍💻 Getting Started
-Follow these steps to run the project locally:
+```
 
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
+---
+
+## 🧑‍💻 Getting Started
+
+To get a local copy up and running, follow these steps:
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/Dharani-S93/weather-dashboard.git
 cd weather-dashboard
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 npm install
-3️⃣ Run the App
-bash
-Copy
-Edit
+```
+
+### 3️⃣ Start the Development Server
+
+```bash
 npm start
-4️⃣ Open in Browser
-Go to http://localhost:3000 and login using the demo credentials.
+```
 
-🔍 API Usage
-This app uses the OpenWeatherMap API to fetch current weather data.
-Endpoint: https://api.openweathermap.org/data/2.5/weather
-Data includes:
+### 4️⃣ Open in Browser
 
-Temperature
+Navigate to: [http://localhost:3000](http://localhost:3000)  
+Use the demo credentials provided above to log in.
 
-Weather condition
+---
 
-Wind speed
+## 🔍 API Integration
 
-Humidity
+This app utilizes the **OpenWeatherMap API** to fetch real-time weather data.
 
-City name
+- **Endpoint:** `https://api.openweathermap.org/data/2.5/weather`
+- **Data Includes:**
+  - 🌡️ Temperature
+  - 🌧️ Weather condition
+  - 🌬️ Wind speed
+  - 💧 Humidity
+  - 🏙️ City name
 
-You’ll need an API key from https://openweathermap.org/api.
+🔑 You'll need an API key from [https://openweathermap.org/api](https://openweathermap.org/api).
 
-📦 Dependencies
-json
-Copy
-Edit
+---
+
+## 📦 Dependencies
+
+```json
 "dependencies": {
   "axios": "^1.x.x",
   "react": "^18.x.x",
@@ -134,36 +133,59 @@ Edit
   "react-router-dom": "^6.x.x",
   "react-scripts": "latest"
 }
-🧠 Future Improvements
-🌐 Multi-language support
+```
 
-💾 Save favorite cities
+---
 
-🔁 Toggle between Celsius and Fahrenheit
+## 🧠 Future Improvements
 
-🔒 Backend authentication (JWT/Session)
+- 🌐 Add multi-language support
+- 💾 Enable saving favorite cities
+- 🌡️ Toggle between °C and °F
+- 🔐 Backend authentication (JWT/session-based)
+- 📅 Display 5-day weather forecasts
 
-🌤️ 5-day weather forecast
+---
 
-🙌 Acknowledgements
-ReactJS
+## 🙌 Acknowledgements
 
-OpenWeatherMap
+- [ReactJS](https://reactjs.org/)
+- [OpenWeatherMap](https://openweathermap.org/)
+- [Axios](https://axios-http.com/)
+- [Unsplash](https://unsplash.com/) – for UI design inspiration
 
-Axios
+---
 
-Unsplash – For background inspiration
+## 👨‍💻 Author
 
-👨‍💻 Author
-Dharani S
-📫 GitHub: @Dharani-S93
-🔗 Portfolio: (Add your portfolio link if available)
+**Dharani S**  
+📫 GitHub: [@Dharani-S93](https://github.com/Dharani-S93)  
+🔗 Portfolio: *(Add your link here)*
 
-📝 License
-This project is licensed under the MIT License.
-See LICENSE for details.
+---
 
-⭐️ Show Your Support
-If you like this project, consider giving it a ⭐️ on GitHub!
-Pull requests and suggestions are always welcome!
+## 📝 License
 
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## ⭐️ Show Your Support
+
+If you found this project helpful or inspiring:
+
+🌟 Star the repo  
+💬 Share feedback  
+🤝 Contribute via pull requests!
+
+---
+
+<p align="center">
+  Made with 💙 by Dharani S
+</p>
+```
+
+---
+
+Let me know if you’d like to add a live demo link, portfolio link, badge icons, or anything else — happy to customize it further!
