@@ -188,4 +188,3 @@ If you found this project helpful or inspiring:
 
 ---
 
-Let me know if you’d like to add a live demo link, portfolio link, badge icons, or anything else — happy to customize it further!
